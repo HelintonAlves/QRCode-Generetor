@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.banner {
+    flex: 1;
+    margin: 10px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.main-content {
+    flex: 2;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#text-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#qrcode {
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 10px;
+}
+
+#downloadBtn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .banner,
+    .main-content {
+        width: 100%;
+    }
+}
+
+/* Estilo para o contêiner de caixas de anúncios e mensagens */
+.anuncios-container {
+    display: flex; /* Torna os itens filhos flexíveis */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-wrap: wrap; /* Permite que os itens envolvam para a próxima linha se necessário */
+    margin-bottom: 20px; /* Adiciona espaço inferior para evitar sobreposição com o rodapé */
+}
+
+/* Estilo para as caixas de anúncios */
+.anuncio-box {
+    max-width: 300px; /* Largura máxima para cada caixa de anúncio */
+    background-color: #fff; /* Cor de fundo chamativa */
+    padding: 20px; /* Espaçamento interno */
+    border: 2px solid #e69500; /* Borda mais grossa e cor mais escura */
+    text-align: center; /* Centralizar texto */
+    display: flex; /* Torna os itens filhos flexíveis */
+    flex-direction: row; /* Empilha os elementos verticalmente */
+    transition: transform 0.3s ease-in-out; /* Adiciona transição suave para hover */
+
+
+}
+
+.anuncio-box:hover {
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+.anuncio-box img,
+.anuncio-box iframe {
+    max-width: 100%; /* Imagens e vídeos responsivos, ajustam-se à largura da caixa */
+    height: auto; /* Mantenha a proporção da imagem ou vídeo */
+}
+
+/* Estilo para as mensagens de texto */
+.anuncio-box p {
+    margin-top: 10px; /* Espaçamento superior para separar a mensagem do banner/vídeo */
+    color: #333; /* Cor do texto mais escura */
+    font-size: 16px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo para o texto de link (mensagem de chamada para ação) */
+.anuncio-box a {
+    color: #333; /* Cor do texto mais escura */
+    text-decoration: none; /* Remover sublinhado do link */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.anuncio-box a:hover {
+    color: #e69500; /* Cor do texto mais clara ao passar o mouse */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    padding: 20px; /* Espaçamento interno no rodapé */
+    text-align: center; /* Centralizar texto no rodapé */
+}
+
+.redes-sociais a {
+    color: #fff; /* Cor dos ícones das redes sociais */
+    font-size: 24px; /* Tamanho dos ícones */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    text-decoration: none; /* Remover sublinhado dos links */
+}
+
+.redes-sociais a:hover {
+    color: #ffcc00; /* Cor dos ícones das redes sociais ao passar o mouse */
+}

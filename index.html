@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QR Code</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <h1>Gerador de QR Code</h1>
+    </header>
+
+    <div class="container">
+        <aside class="banner">
+            <!-- Seu código para banners de propaganda vai aqui -->
+            <a href="https://www.magazinevoce.com.br/magazineehelintonalves/" target="_blank">
+            <img src="img/1 - LOGO PARCEIRO (AZUL).png" alt="Banner 1">
+            </a>
+        </aside>
+
+        <section class="main-content">
+            <form id="qr-form">
+                <label for="text-input">Texto para QR Code:</label>
+                <input type="text" id="text-input" placeholder="Insira o texto" maxlength="1000">
+        
+                <button type="button" onclick="gerarQRCode()">Gerar QR Code</button>
+                <!-- Adicione um botão para limpar o campo de texto -->
+                <button id="limparBtn" type="button" onclick="limparCampoTexto()">Limpar Campo</button>
+            </form>
+        
+            <div id="qrcode"></div>
+            <button type="button" id="downloadBtn" onclick="baixarQRCode()" >Baixar QR Code</button>                      
+        </section>
+        
+
+        <aside class="banner">
+            <!-- Seu código para banners de propaganda vai aqui -->
+            <a href="https://www.magazinevoce.com.br/magazineehelintonalves/" target="_blank">
+                <img src="img/4 - TEM OFERTA.png" alt="Banner 2">
+            </a>
+        </aside>
+    </div>
+    
+    <div class="anuncio-box">
+        <a href="https://www.parceiromagalu.com.br/magazineehelintonalves/smartphone-motorola-moto-g54-256gb-azul-5g-8gb-ram-65-cam-dupla-selfie-16mp-dual-chip/p/237876300/te/srmt/" target="_blank" rel="noopener noreferrer">
+            <img src="img/motog54.webp" alt="Banner 1">
+        </a>
+        <p>Desconto imperdível! Clique para aproveitar agora!</p>
+    </div>
+    <div class="anuncio-box">
+        <a href="https://www.parceiromagalu.com.br/magazineehelintonalves/smart-tv-50-uhd-4k-led-samsung-50cu7700-wi-fi-bluetooth-alexa-3-hdmi/p/237016100/et/tv4k/" target="_blank" rel="noopener noreferrer">
+            <img src="img/TVSamsung.webp" alt="Banner 2">
+        </a>
+        <p>"As melhores ofertas estão aqui! Não perca tempo, confira já!"</p>
+    </div>
+    <div class="anuncio-box">
+        <a href="https://www.parceiromagalu.com.br/magazineehelintonalves/playstation-5-825gb-1-controle-branco-sony/p/236508100/ga/gps5/" target="_blank" rel="noopener noreferrer">
+            <!-- Substitua "SEU_CODIGO_DO_VIDEO" pelo código de incorporação do seu vídeo (por exemplo, do YouTube) -->
+            <iframe width="560" height="315" src="videos/PlayStation 5 825GB 1 Controle Branco Sony.mp4" frameborder="0" allowfullscreen></iframe>
+        </a>
+        <p>"Descubra o produto que vai transformar sua vida. Clique para assistir!"</p>
+    </div>
+
+    <footer>
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/helinton-alves-coelho-8354aa11a/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/HelintonAlves" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</html>
